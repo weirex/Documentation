@@ -1,9 +1,12 @@
-## 6.0.5 preview-01 (2022.03.03)
+## 6.0.5 (2022.03.14)
+- 调整：UtilsBasis.GetUnixTimestamp 去掉毫秒限制
+- 增加：UtilsBasis.SnowflakeId 方便调用
+- 调整注释说明、优化代码
 - 创建 `Rex.Extensions.Models` 实体扩展类，`Rex.Utils.Core` 移除所有`ResultData`相关对象；
-  - `ResultData` 输出JSON结果: `{ "code": 1000, "msg": "string", "result": { } }`
-  - `ResultDataModel` 输出JSON结果: `{ "code": 1000, "msg": "string", "data": { } }`
-  - `ResultStatusModel` 输出JSON结果: `{ "status": 1000, "msg": "string", "data": { } }`
-- 计划从 `6.1.0` 版本起 `6.x` 不再支持 `.NET 5`，由 `5.x` 继续支持 `.NET 5` 和 `Framework 4.7+`
+    - `ResultData` 输出JSON结果: `{ "code": 1000, "msg": "string", "result": { } }`
+    - `ResultDataModel` 输出JSON结果: `{ "code": 1000, "msg": "string", "data": { } }`
+    - `ResultStatusModel` 输出JSON结果: `{ "status": 1000, "msg": "string", "data": { } }`
+    - 计划从 `6.1.0` 版本起 `6.x` 不再支持 `.NET 5`，由 `5.x` 继续支持 `.NET 5` 和 `Framework 4.7+`
 
 
 ## 6.0.4 (2022.01.11)
