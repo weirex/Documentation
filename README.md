@@ -1,6 +1,6 @@
 # 说明文档
 
-## Rex.Utils.Core
+## Rex.Utils.Core [![NuGet version (Rex.Utils.Core)](https://img.shields.io/nuget/v/Rex.Utils.Core.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Utils.Core/)
 - [功能说明](rex.utils.core.md "功能说明")
     - 1.读取 `appsettings.json`
     - 2.Convert 类型转换
