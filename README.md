@@ -1,6 +1,6 @@
 # 说明文档
 
-## Rex.Utils.Core [![NuGet version (Rex.Utils.Core)](https://img.shields.io/nuget/v/Rex.Utils.Core.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Utils.Core/)
+## Rex.Utils.Core  [![NuGet version (Rex.Utils.Core)](https://img.shields.io/nuget/v/Rex.Utils.Core.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Utils.Core/)
 - [功能说明](rex.utils.core.md "功能说明")
     - 1.读取 `appsettings.json`
     - 2.Convert 类型转换
@@ -14,7 +14,7 @@
 - [更新日志](rex.utils.core.changelog.md "更新日志")
 
 
-## Rex.Extensions.Models
+## Rex.Extensions.Models  [![NuGet version (Rex.Extensions.Models)](https://img.shields.io/nuget/v/Rex.Extensions.Models.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Extensions.Models/)
 - 统一返回客户端实体类:
     - `ResultData` 输出JSON结果: `{ "code": 1000, "msg": "string", "result": { } }`
     - `ResultDataModel` 输出JSON结果: `{ "code": 1000, "msg": "string", "data": { } }`
@@ -32,7 +32,7 @@
       联通虚拟 167,1704,1707,1708,1709,171
 - 持续补充中.
 
-## Rex.Extensions.Microsoft.AspNetCore.Mvc
+## Rex.Extensions.Microsoft.AspNetCore.Mvc  [![NuGet version (Rex.Microsoft.AspNetCore.Mvc.Extensions)](https://img.shields.io/nuget/v/Rex.Microsoft.AspNetCore.Mvc.Extensions.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Microsoft.AspNetCore.Mvc.Extensions/)
 - 功能说明
     - 1.`AddCorsExt` 跨域扩展
     - 2.`AddJsonOptionsExt` `AddNewtonsoftJsonExt` JSON 序列化扩展
@@ -41,7 +41,7 @@
 - 更新日志
 
 
-## Rex.Extensions.Helper.Core
+## Rex.Extensions.Helper.Core  [![NuGet version (Rex.Helper.Core)](https://img.shields.io/nuget/v/Rex.Helper.Core.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Helper.Core/)
 - 功能说明
     - 1.AutoMapperHelper
     - 2.HttpHelper (简易版，仅支持 GET POST)
@@ -50,7 +50,6 @@
 - 更新日志
 
 
-## Rex.Helper.Excel
+## Rex.Helper.Excel  [![NuGet version (Rex.Helper.Excel)](https://img.shields.io/nuget/v/Rex.Helper.Excel.svg?style=flat-square)](https://www.nuget.org/packages/Rex.Helper.Excel/)
 - 功能说明
 - 更新日志
-
