@@ -6,7 +6,6 @@
     - `ResultData` 输出JSON结果: `{ "code": 1000, "msg": "string", "result": { } }`
     - `ResultDataModel` 输出JSON结果: `{ "code": 1000, "msg": "string", "data": { } }`
     - `ResultStatusModel` 输出JSON结果: `{ "status": 1000, "msg": "string", "data": { } }`
-    - 计划从 `6.1.0` 版本起 `6.x` 不再支持 `.NET 5`，由 `5.x` 继续支持 `.NET 5` 和 `Framework 4.7+`
 
 
 ## 6.0.4 (2022.01.11)
