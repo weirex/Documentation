@@ -5,7 +5,7 @@
 - 支持 `.NET 5` `.NET 6`
 
 ## 目录
-* [更新日志（2022.03.03）](rex.utils.core.changelog.md "更新日志")
+* [更新日志](rex.utils.core.changelog.md "更新日志")
 * [1.读取 `appsettings.json`](#1读取-appsettingsjson)
 * [2.Convert 类型转换](#2convert-类型转换)
 * [3.Linq 扩展](#3linq-扩展)
