@@ -1,3 +1,12 @@
+## 6.6.0 (2022.04.11)
+- 调整版本号
+    - `6.6.x` 支持 `.NET 6`
+    - `6.5.x` 支持 `.NET 5`，2022年05月08日，与微软同步停更，仅保持维护BUG
+    - `6.4.x` 支持 `.NET Framework 4.7`，已停更，仅保持维护BUG
+- 增加：`GetPinYinForAll`, `GetPinYinForName`, `GetFirstPinYinForName`, `GetFirstPinYinForAll`
+- 调整注释说明、优化代码
+
+
 ## 6.0.5 (2022.03.14)
 - 调整：UtilsBasis.GetUnixTimestamp 去掉毫秒限制
 - 增加：UtilsBasis.SnowflakeId 方便调用
