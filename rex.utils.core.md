@@ -1,8 +1,14 @@
 # Rex.Utils.Core
 
+
 ## 简介
 - 扩展库包括：类型转换、类型检测、加密/解密、日志、常用扩展方法、文字处理、配置文件读取等
-- 支持 `.NET 5` `.NET 6`
+- 版本号说明
+    - `6.6.x` 表示支持 `.NET 6`
+    - `6.5.x` 表示支持 `.NET 5`
+    - `6.4.x` 表示支持 `.NET Framework 4.7`
+- 2022年05月08日，与微软同步终止支持 `.NET 5`
+
 
 ## 目录
 * [更新日志](rex.utils.core.changelog.md "更新日志")
@@ -715,7 +721,11 @@ DateTime.Parse("2021-12-18").IsWeekEnd()    // true
 - `HasEnglish` 是否含有英语
 - `IsAllEnglish` 是否全为英语（不能有任何符号与空格）
 - `GetFirstPinYin` 获取首字母
+- `GetFirstPinYinForName` 获取姓名拼音首字母
+- `GetFirstPinYinForAll` 获取所有拼音首字母
 - `GetPinYin` 获取拼音全拼
+- `GetPinYinForName` 获取姓名拼音
+- `GetPinYinForAll` 获取所有拼音
 
 ```csharp
 DateTime.Now.ToChineseDate() // "庚子年十月廿六"
@@ -756,10 +766,28 @@ chs.HasEnglish();       // true
 chs.IsAllEnglish();     // true
 
 chs = "我骑着自行车去的中国人民银行";
-chs.GetFirstPinYin();   // "WQZXCQZGRMYH"
-chs.GetPinYin();        // "WoQiZiXingCheQuZhongGuoRenMinYinHang"
-chs.GetPinYinAsSpace(); // "Wo Qi Zi Hang Che Qu Zhong Guo Ren Min Yin Hang"
-chs[3].GetAllPinYin();  // new[] { "Hang", "Xing", "Heng" }
+chs.GetFirstPinYin()	// "WQZXCQZGRMYH"
+chs.GetFirstPinYin(",")	// "W,Q,Z,X,C,Q,Z,G,R,M,Y,H"
+
+chs.GetPinYin()		// "WoQiZiXingCheQuZhongGuoRenMinYinHang"
+chs.GetPinYin(true)	// "WǒQíZìXíngChēQùZhōngGuóRénMínYínHáng"
+
+chs.GetPinYin(",")	 // "Wo,Qi,Zi,Xing,Che,Qu,Zhong,Guo,Ren,Min,Yin,Hang"
+chs.GetPinYin(",", true) // "Wǒ,Qí,Zì,Xíng,Chē,Qù,Zhōng,Guó,Rén,Mín,Yín,Háng"
+
+"行".GetPinYinForAll()	   // "Hang", "Xing", "Heng"
+"行".GetPinYinForAll(true) // "Háng", "Xíng", "Hàng", "Héng", "Xìng"
+
+"传行单".GetPinYinForAll()	// "Chuan", "Zhuan", "Hang", "Xing", "Heng", "Dan", "Shan", "Chan"
+"传行单".GetPinYinForAll(true)	// "Chuán", "Zhuàn", "Háng", "Xíng", "Hàng", "Héng", "Xìng", "Dān", "Shàn", "Chán", "Shan"
+
+"单一一".GetPinYinForName()		// "ShanYiYi"
+"单一一".GetPinYinForName(true)		// "ShànYīYī"
+"单一一".GetPinYinForName(",")		// "Shan,Yi,Yi"
+"单一一".GetPinYinForName(",", true)	// "Shàn,Yī,Yī"
+
+"单一一".GetFirstPinYinForName()		// "SYY"
+"单一一".GetFirstPinYinForName(",")	// "S,Y,Y"
 
 ```
 
