@@ -6,7 +6,7 @@
 - 调整注释说明、优化代码
 - 增加：`GetPinYinForAll`, `GetPinYinForName`, `GetFirstPinYinForName`, `GetFirstPinYinForAll`
 - 增加：`Guid` 类型增加 `.IsNull()` 扩展方法，用于判断是否为 `null` 或 `Guid.Empty`
-- 增加：`.IsZero()` 扩展方法，用于判断数值类型是否为 `null` 或 `0`
+- 增加：`.IsZero()` 扩展方法，用于判断数值类型是否为 `null` 或 `0`。支持类型：`short, short?, int, int?, long, long?, decimal, decimal?, double, double?, float, float?`
 - 优化：`UtilsBasis.GetUnixTimestamp`，通过 `ConcurrentDictionary` 记录已生成时间戳，确保不重复
 
 
