@@ -1,10 +1,14 @@
-## 6.6.0 (2022.04.11)
+## 6.6.0/6.5.0/6.4.0 (2022.04.24)
 - 调整版本号
     - `6.6.x` 支持 `.NET 6`
     - `6.5.x` 支持 `.NET 5`，2022年05月08日，与微软同步停更，仅保持维护BUG
     - `6.4.x` 支持 `.NET Framework 4.7`，已停更，仅保持维护BUG
-- 增加：`GetPinYinForAll`, `GetPinYinForName`, `GetFirstPinYinForName`, `GetFirstPinYinForAll`
 - 调整注释说明、优化代码
+- 增加：`GetPinYinForAll`, `GetPinYinForName`, `GetFirstPinYinForName`, `GetFirstPinYinForAll`
+- 增加：`Guid` 类型增加 `.IsNull()` 扩展方法，用于判断是否为 `null` 或 `Guid.Empty`
+- 增加：`.IsZero()` 扩展方法，用于判断数值类型是否为 `null` 或 `0`
+- 优化：`UtilsBasis.GetUnixTimestamp`，通过 `ConcurrentDictionary` 记录已生成时间戳，确保不重复
+
 
 
 ## 6.0.5 (2022.03.14)
